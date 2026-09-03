@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="june.app" target="25" />
+      <module name="june.core.data" target="25" />
+      <module name="june.core.database" target="25" />
+      <module name="june.core.designsystem" target="25" />
+      <module name="june.core.domain" target="25" />
+      <module name="june.core.navigation" target="25" />
+      <module name="june.core.network" target="25" />
+      <module name="june.core.ui" target="25" />
+      <module name="june.feature.home" target="25" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

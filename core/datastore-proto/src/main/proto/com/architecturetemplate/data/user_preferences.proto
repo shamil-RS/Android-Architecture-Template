@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "com.architecturetemplate.data/dark_theme_config.proto";
+
+option java_package = "com.architecturetemplate.data";
+option java_multiple_files = true;
+
+message UserPreferences {
+  DarkThemeConfigProto dark_theme_config = 1;
+  bool use_dynamic_color = 2;
+  bool should_hide_onboarding = 3;
+
+  // NEXT AVAILABLE ID: 4
+}
