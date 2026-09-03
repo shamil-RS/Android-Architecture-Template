@@ -31,10 +31,11 @@ py init_project.py com.yourbrand.app
 
 ---
 
-## 🛠️ CI/CD & Automation
+### 🛠️ CI/CD & Automation
 
-Out of the box, the project includes a pre-configured **GitHub Actions** pipeline (`.github/workflows/ci.yml`) that automatically performs the following actions on every push or Pull Request:
+Out of the box, the project includes a production-grade **GitHub Actions** pipeline (`.github/workflows/ci.yml`) that automatically performs the following actions on every push or Pull Request:
 
-* Builds the project (`assembleDebug`).
-* Runs static code analysis (`lintDebug`).
-* Executes unit tests (`testDebugUnitTest`)
+*   **Validates Build Logic:** Verifies Kotlin Convention Plugins compilation (`:build-logic:convention:check`).
+*   **Runs Static Analysis:** Executes global code analysis across all modules (`lint`).
+*   **Executes Unit Tests:** Runs all local unit tests simultaneously (`test`).
+*   **Assembles Build & Saves Artifacts:** Compiles the project (`assembleDebug`) and securely uploads the resulting debug APK as a workflow artifact.
